@@ -1,0 +1,22 @@
+<!doctype html>
+<!-- The game itself: the client's own page (source/index.html: their stylesheet link, markup and classic
+     scripts, copied in at build time by vite.gamebull.config.ts, unchanged, plus three GameBull scripts in their
+     script list: gb/bg-env.js + gb/bg-host.js before their gamebull.js, gb/bg-hooks.js after their home.js).
+     Loaded by index.html in a frame filling the page. -->
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+<meta name="referrer" content="no-referrer">
+<title>Bar Grass · Color Sort</title>
+<link rel="stylesheet" href="grass.css?v=1">
+  <script type="module" crossorigin src="./gb/app-Dv-M6QU7.js"></script>
+  <link rel="modulepreload" crossorigin href="./gb/nozoom-BwxvnWFh.js">
+</head>
+<body>
+<section id="home" aria-label="Bar Grass トップページ"><div class="home-logo" role="img" aria-label="Bar Grass"></div><div class="home-city-lights city-lights" aria-hidden="true"></div><div class="home-intro"><span class="home-kicker">COCKTAIL BAR · COLOR SORT</span><h2>今夜は、<br>遊んで乾杯。</h2><p>色をそろえて、カクテルを仕上げる。<br>きらめく一杯を、あなたの手で。</p></div><div class="home-display" aria-hidden="true"><div class="hero-hookah"><div class="hero-water"></div><span class="hero-ember" aria-hidden="true"></span><span class="hero-smoke" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></span><img src="assets/hero-cocktail.png" alt=""></div><span class="home-caption">MIX YOUR PERFECT MOMENT</span></div><div class="home-actions"><button id="continue-game" class="home-play">START <span>→</span></button><p id="participation-note"></p><p id="home-error" role="status" aria-live="polite"></p><span id="home-progress"></span></div><div class="home-foot"><span>851 STAGES</span><i>✧</i><span>TAKE YOUR TIME</span></div></section><button id="back-home" aria-label="トップページへ戻る">‹ TOP</button><div class="city-lights" aria-hidden="true"></div><header><div class="brand"><span class="dot">◒</span> WATER SORT</div><small>A LITTLE MOMENT OF CLARITY</small></header><button id="sound" type="button" aria-label="BGMと効果音の切り替え" aria-pressed="true">♫ 音 ON</button>
+<main><div class="eyebrow">BAR GRASS · COLOR SORT</div><h1>今夜は、遊んで乾杯。</h1><p>光に満ちたボトルを、同じ色で満たしましょう。</p><div class="stats"><div><span>LEVEL</span><strong id="level">01</strong></div><div><span>MOVES</span><strong id="moves">0</strong></div><div><span>完成</span><strong id="done">0 / 2</strong></div></div><div id="board" aria-label="パズルのボトル"></div><div id="message" role="status" aria-live="polite">注ぐボトルを選んでください</div></main>
+<dialog id="gameover"><div class="eyebrow">LAST CALL</div><h1>GAME OVER</h1><p id="gameover-result"></p><button id="gameover-home" class="action primary">終了を確認しています…</button></dialog><dialog id="win"><div class="eyebrow">CHEERS!</div><h1>完成！</h1><p id="result"></p><button class="action primary" id="next">次のステージへ →</button><button class="action" id="close">盤面を見る</button></dialog>
+<script src="gamebull-config.js?v=1"></script><script src="gb/bg-env.js?v=1"></script><script src="gb/bg-host.js?v=1"></script><script src="gamebull.js?v=1"></script><script src="levels.js?v=1"></script><script src="audio.js?v=1"></script><script src="scroll-lock.js?v=1"></script><script src="pour.js?v=1"></script><script src="atmosphere.js?v=1"></script><script src="gameover.js?v=1"></script><script src="game.js?v=1"></script><script src="home.js?v=1"></script><script src="gb/bg-hooks.js?v=1"></script>
+</body>
+</html>
